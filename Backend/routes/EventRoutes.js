@@ -4,6 +4,11 @@ const event = require("../models/events");
 const auth = require("./users/auth");
 
 // GET ROUTES
+router.get("/" (req,res)=>{
+  res.send({
+    msg: "hello"
+  })
+})
 
 // get request for displaying all events
 router.get("/", async (req, res) => {
